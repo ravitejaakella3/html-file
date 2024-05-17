@@ -1,4 +1,4 @@
-// Sample product data (replace with your own products)
+// Sample product data 
 const products = [
     { id: 1, name: 'TV', price: 10000, image: 'TV image.jpg', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac mauris id justo fringilla varius. Phasellus suscipit vitae ligula at suscipit. Vivamus ultrices turpis quis ultrices fringilla.' },
     { id: 2, name: 'Mobile', price: 20000, image: 'Mobile image.jpg', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac mauris id justo fringilla varius. Phasellus suscipit vitae ligula at suscipit. Vivamus ultrices turpis quis ultrices fringilla.' },
@@ -6,7 +6,6 @@ const products = [
     { id: 4, name: 'Earphones', price: 2000, image: 'earPhones.jpg', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac mauris id justo fringilla varius. Phasellus suscipit vitae ligula at suscipit. Vivamus ultrices turpis quis ultrices fringilla.' }
 ];
 
-// DOM elements
 const productsContainer = document.getElementById('products-container');
 const cartBtn = document.getElementById('cart-btn');
 const backToHomeBtn = document.getElementById('back-to-home');
