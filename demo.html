@@ -537,3 +537,140 @@
     </footer>
 
 </body>
+<section class="gallery">
+  <h3>OUR GALLERY</h3>
+  <div class="divider">
+    <span class="line"></span>
+    <span class="icon"><i class="fa-solid fa-droplet"></i></span>
+    <span class="line"></span>
+  </div>
+  <p>Charixy is the charity, Non-profit government organization, fundraising. Our activities help entrepreneurs get the target.</p>
+
+  <div class="gallery-container">
+    <div class="gallery-left">
+      <img src="images/gallery1.jpg" alt="Gallery 1">
+    </div>
+
+    <div class="gallery-right">
+      <div class="gallery-row">
+        <img src="images/gallery2.jpg" alt="Gallery 2">
+        <img src="images/gallery3.jpg" alt="Gallery 3">
+        <img src="images/gallery4.jpg" alt="Gallery 4">
+      </div>
+      <div class="gallery-row">
+        <img src="images/gallery5.jpg" alt="Gallery 5">
+        <img src="images/gallery6.jpg" alt="Gallery 6">
+      </div>
+    </div>
+  </div>
+</section>
+/* GALLERY SECTION */
+.gallery {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.gallery h3 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.gallery p {
+  font-size: 17px;
+  color: gray;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+/* divider */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.divider .line {
+  width: 50px;
+  height: 2px;
+  background-color: orangered;
+}
+
+.divider .icon {
+  color: orangered;
+  font-size: 16px;
+  border-bottom: 2px solid orangered;
+  border-top: 2px solid orangered;
+  padding: 10px 20px;
+}
+
+/* FLEX CONTAINER */
+.gallery-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+/* LEFT COLUMN: single tall image */
+.gallery-left {
+  flex: 1;
+}
+
+.gallery-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* RIGHT COLUMN: two stacked rows */
+.gallery-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* each row of images */
+.gallery-row {
+  display: flex;
+  gap: 10px;
+}
+
+.gallery-row img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.gallery-row img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+/* RESPONSIVE (Mobile View) */
+@media (max-width: 768px) {
+  .gallery-container {
+    flex-direction: column;
+  }
+
+  .gallery-left img {
+    height: auto;
+  }
+
+  .gallery-row {
+    flex-direction: column;
+  }
+
+  .gallery-row img {
+    height: auto;
+  }
+}
+    
